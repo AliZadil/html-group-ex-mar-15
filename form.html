@@ -10,7 +10,40 @@
 </head>
 
 <body>
-
+  <form action="form-data.html">
+    <div class="form-input-container">
+      <label for="">Your name:</label>
+      <input id="myname" name="myname" type="text" required>
+      <br>
+      <label for="emailaddr">Your email:</label>
+      <input id="emailaddr" name="email" required>
+      <br>
+      <label for="hasguest">Will you bring a guest?</label>
+      <input type="text" value="off" id="hasguest" name="hasguest" hidden>
+      <input id="hasguest" name="hasguest" type="checkbox">
+      <br>
+      <input type="submit">
+    </div>
+  </form>
+  <br>
+  <br>
+  <form action="form-data.html">
+    <div class="form-input-container">
+      <label for="telefon">Phone number:</label>
+      <input type="tel" id="telefon" name="phone" required>
+      <br>
+      <label for="job">Job function:</label>
+      <select name="job" required>
+        <option value="backend">Backend Developer</option>
+        <option value="frontend">Frontend Developer</option>
+        <option value="manager">Project Manager</option>
+      </select>
+      <br>
+      <label for="expextation">What are your expectations?:</label>
+      <textarea id="expectation" name="expectation" required minlength="10"></textarea>
+      <input type="submit">
+    </div>
+  </form>
   <br><br><br>
   <a href="index.html">Back Home</a>
 </body>
